@@ -24,7 +24,7 @@ SERVER_PID=$!
 
 # Wait for server to start
 echo "Waiting for server to start..."
-sleep 3
+sleep 5
 
 # Check if server started successfully
 if ! kill -0 $SERVER_PID 2>/dev/null; then
