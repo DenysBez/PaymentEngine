@@ -1,0 +1,26 @@
+# Compiled files
+/target/
+
+# Cargo-specific files
+**/*.rs.bk
+
+# IntelliJ / CLion IDE files
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup / temp files
+*.swp
+*.swo
+*~
+
+
+# Added by cargo
+
+/target
