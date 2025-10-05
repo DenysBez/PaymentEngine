@@ -1,0 +1,28 @@
+[package]
+name = "payments_engine"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+csv = "1.3"
+serde = { version = "1.0", features = ["derive"] }
+rust_decimal = "1.38"
+rust_decimal_macros = "1.38"
+log = "0.4"
+env_logger = "0.11"
+dashmap = "6.1"
+indexmap = "2.0"
+tokio = { version = "1.47", features = ["full"] }
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.1"
+tempfile = "3.23"
+
+[[bin]]
+name = "payments_engine"
+path = "src/main.rs"
+
+[[bin]]
+name = "payments_server"
+path = "src/server.rs"
