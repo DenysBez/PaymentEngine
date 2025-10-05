@@ -75,8 +75,8 @@ async fn handle_connection(
         .trim(csv::Trim::All)
         .from_reader(cursor);
 
-    let mut transaction_count = 0u64;
-    let mut error_count = 0u64;
+    let mut transaction_count = 0;
+    let mut error_count = 0;
 
     for result in csv_reader.deserialize::<RawTrxRecord>() {
         match result {
